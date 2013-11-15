@@ -1,0 +1,16 @@
+Modal YouTube launcher
+
+Modal YouTube launcher uses the Simple Modal plugin to display an embedded video in a modal window. The YouTube video is set to timeout 1 second before the end of the video and timeout causes the modal window to close.
+
+The reason for the timeout is to prevent the display of related videos, which is also accomplished by closing the window.
+
+
+## Author
+
+**Mark D Johnson**
+
++ [http://twitter.com/MarkDJohnsonDev](http://twitter.com/MarkDJohnsonDev)
++ [http://github.com/thefewminutes](http://github.com/thefewminutes)
+
+Simple Modal:
++ [http://www.ericmmartin.com/projects/simplemodal/](http://www.ericmmartin.com/projects/simplemodal/)
