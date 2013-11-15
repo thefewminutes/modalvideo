@@ -40,7 +40,8 @@ function onYouTubeIframeAPIReady() {
 		events: {
 			'onReady': onPlayerReady,
 			'onStateChange': onPlayerStateChange
-		}
+		},
+		playerVars: { 'rel': 0 }
 	});
 }
 
@@ -48,11 +49,9 @@ function onPlayerReady(event) {
 	event.target.playVideo();
 }
 
-var done = false;
 function onPlayerStateChange(event) {
-	if (event.data == YT.PlayerState.PLAYING && !done) {
-		setTimeout(stopVideo, 180000);
-		done = true;
+	if (event.data == YT.PlayerState.ENDED) {
+		stopVideo();
 	}
 }
 function stopVideo() {
